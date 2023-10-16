@@ -22,5 +22,6 @@
   "homepage": "https://github.com/RobSprouse/Robs-README-Gen#readme",
   "dependencies": {
     "inquirer": "^8.2.4"
-  }
+  },
+  "type": "module"
 }
