@@ -1,6 +1,5 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// Source: A repository containing Markdown License Badges https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
 // If there is no license, return an empty string
-// Source: Link to a repository containing Markdown License Badges https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
 function renderLicenseBadge(license) {
      switch (license) {
           case "MIT":
@@ -18,7 +17,6 @@ function renderLicenseBadge(license) {
      }
 }
 
-// TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
      switch (license) {
@@ -36,14 +34,14 @@ function renderLicenseLink(license) {
                return "";
      }
 }
-// TODO: Create a function that returns the license section of README
+
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
      if (license) {
           return `
-   ## License
+## License
    
-   This application is licensed under the ${license} license. See the following link for more information: ${renderLicenseLink(
+This application is licensed under the ${license} license. See the following link for more information: ${renderLicenseLink(
                license
           )}
    `;
@@ -52,7 +50,6 @@ function renderLicenseSection(license) {
      }
 }
 
-// TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
      return `
 # ${data.title}
@@ -97,4 +94,4 @@ If you have any questions, please contact me at ${
 `;
 }
 
-export default { generateMarkdown, renderLicenseBadge, renderLicenseLink, renderLicenseSection };
+export default generateMarkdown;
