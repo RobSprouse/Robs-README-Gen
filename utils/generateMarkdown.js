@@ -97,4 +97,4 @@ If you have any questions, please contact me at ${
 `;
 }
 
-module.exports = generateMarkdown;
+export default { generateMarkdown, renderLicenseBadge, renderLicenseLink, renderLicenseSection };
