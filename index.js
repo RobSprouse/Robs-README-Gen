@@ -1,7 +1,9 @@
+// COMMENT: Imported packages needed for this application
 import inquirer from "inquirer";
 import fs from "fs";
 import generateMarkdown from "./utils/generateMarkdown.js";
 
+// COMMENT:Questions for user input
 const questions = [
      {
           type: "input",
@@ -51,6 +53,7 @@ const questions = [
      },
 ];
 
+// COMMENT: Function to write README file
 function writeToFile(fileName, data) {
      fs.writeFile(fileName, data, (err) => {
           if (err) {
@@ -60,6 +63,7 @@ function writeToFile(fileName, data) {
      });
 }
 
+// COMMENT: Function to initialize app
 function init() {
      inquirer.prompt(questions).then((answers) => {
           const markdown = generateMarkdown(answers);
@@ -67,5 +71,5 @@ function init() {
      });
 }
 
-// Function call to initialize app
+// COMMENT: Function call to initialize app
 init();

@@ -1,4 +1,6 @@
-// Source: A repository containing Markdown License Badges https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
+
+// COMMENT: Source: A repository containing Markdown License Badges https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
+// COMMENT: Function to render the license badge
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
      switch (license) {
@@ -17,6 +19,7 @@ function renderLicenseBadge(license) {
      }
 }
 
+// COMMENT: Function to render the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
      switch (license) {
@@ -35,6 +38,7 @@ function renderLicenseLink(license) {
      }
 }
 
+// COMMENT: Function to render the license section
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
      if (license) {
@@ -50,6 +54,7 @@ This application is licensed under the ${license} license. See the following lin
      }
 }
 
+// COMMENT: Function to generate the README markdown
 function generateMarkdown(data) {
      return `
 # ${data.title}
@@ -94,4 +99,5 @@ If you have any questions, please contact me at ${
 `;
 }
 
+// COMMENT: Export the generateMarkdown function
 export default generateMarkdown;
